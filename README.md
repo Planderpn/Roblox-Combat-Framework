@@ -1,68 +1,48 @@
 # Roblox Combat Framework
 
+> ⚠️ This project is currently under development. Core systems are being implemented and the API may change between releases.
+
 A modular combat framework for Roblox games.
 
-This project started as a reusable combat system so I didn't have to rewrite the same mechanics for every game. The goal is to keep everything modular and easy to expand without changing the core system.
+This project is designed to provide a clean, expandable combat system that developers can easily integrate into their own projects. Everything is split into modules to make customization and future updates simple.
 
-## Current Features
+## Features
 
-- 4 hit combo
-- Hitbox module
-- Damage handling
-- Stun system
+- 4 Hit M1 Combo
+- Server-sided Hit Detection
+- Damage Handling
 - Blocking
-- Dash support
+- Dash System
+- Stun
 - Knockback
-- Configurable values
+- Configurable Settings
 
-## Folder Layout
+## Installation
 
-```
-src/
-    CombatService.lua
-    Combo.lua
-    Damage.lua
-    Hitbox.lua
-    Dash.lua
-    Block.lua
-    Stun.lua
-    Config.lua
+```lua
+local Combat = require(path.To.CombatFramework)
 ```
 
 ## Example
 
 ```lua
-local Combat = require(path.To.CombatFramework)
-
 Combat:Attack(player)
 Combat:Dash(player, "Forward")
 Combat:SetBlocking(player, true)
 ```
 
-## Configuration
+## Roadmap
 
-Most settings can be changed inside `Config.lua`.
-
-Things like:
-
-- Combo timing
-- Damage
-- Dash distance
-- Stun duration
-- Knockback strength
-
-## Planned
-
-- Air combos
-- Guard break
-- Perfect block
+- Air Combos
+- Perfect Block
+- Guard Break
 - Ragdolls
-- NPC support
-- Better mobile controls
+- NPC Support
+- Mobile Controls
 
 ## Contributing
 
-If you find a bug or have an idea for something useful, feel free to open an issue or submit a pull request.
+Contributions, bug reports, and suggestions are welcome. Feel free to open an issue or submit a pull request.
 
 ## License
 
