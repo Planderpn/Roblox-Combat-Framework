@@ -28,5 +28,3 @@ Config.Knockback = {
 }
 
 return Config
-
-Add combat configuration
