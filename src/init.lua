@@ -1,3 +1,3 @@
-local Module = {}
+local Combat = require(script.CombatService)
 
-return Module
+return Combat
